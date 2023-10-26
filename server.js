@@ -5,7 +5,7 @@ app.use(cors())
 const server = require('http').Server(app);
 const io = require('socket.io')(server, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: "https://video-chat-app-ecru.vercel.app",
   }
 });
 const {v4:uuidv4} = require('uuid');
